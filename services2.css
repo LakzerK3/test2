@@ -151,64 +151,7 @@ nav a.active {
 
 
 }
-.fire-extinguishers2 {
-  padding: 3rem 0;
-}
 
-.fire-extinguishers2 .box {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 2rem;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-}
-
-.fire-extinguishers2 h2 {
-  text-align: center;
-  margin-bottom: 1.5rem;
-  color: #b30000;
-  font-size: 30px;
-}
-
-/* Content inside the box */
-.fire-extinguishers2-content {
-  display: flex;
-  align-items: flex-start; /* align text with top of the image */
-  justify-content: space-between;
-  gap: 2rem;
-}
-
-.fire-extinguishers2-content p {
-  flex: 2;
-  font-size: 1.2rem;
-  text-align: left;
-  margin-top: 0; /* ensure no extra top spacing */
-}
-
-
-.fire-extinguishers2-content img {
-  flex: 1;
-  max-width: 300px;
-  height: auto;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-/* Responsive: stack on small screens */
-@media (max-width: 768px) {
-  .fire-extinguishers2-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .fire-extinguishers2-content p {
-    text-align: center;
-  }
-
-  .fire-extinguishers2-content img {
-    max-width: 100%;
-  }
-}
 
 
 /* Footer */
