@@ -62,37 +62,7 @@ nav a:hover,
 nav a.active {
   color: #ffd6d6;
 }
-/* Hamburger button */
-.menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
-}
 
-/* Mobile nav */
-@media (max-width: 768px) {
-  nav ul {
-    display: none;
-    flex-direction: column;
-    background: #b30000;
-    position: absolute;
-    top: 60px;
-    right: 0;
-    width: 200px;
-    border-radius: 0 0 6px 6px;
-  }
-
-  nav ul.active {
-    display: flex;
-  }
-
-  .menu-toggle {
-    display: block;
-  }
-}
 /* Hero */
 .hero {
   position: relative;
@@ -120,8 +90,6 @@ nav a.active {
   color: #000;
   font-size: 20px;
 }
-
-/* Fire Extinguishers Section */
 /* Fire Extinguishers Section */
 .fire-extinguishers {
   padding: 3rem 0;
@@ -157,13 +125,14 @@ nav a.active {
   margin-top: 0; /* ensure no extra top spacing */
 }
 
-.fire-extinguishers-content img {
-  max-width: 200px;   /* shrink width */
-  height: auto;       /* keep proportions */
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
 
+.fire-extinguishers-content img {
+  flex: 1;
+  max-width: 300px;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
 
 /* Responsive: stack on small screens */
 @media (max-width: 768px) {
@@ -179,98 +148,68 @@ nav a.active {
   .fire-extinguishers-content img {
     max-width: 100%;
   }
+
+
 }
-.services {
+.fire-extinguishers2 {
   padding: 3rem 0;
 }
 
-.service-box {
+.fire-extinguishers2 .box {
   background: #fff;
   border: 1px solid #ddd;
   border-radius: 6px;
   padding: 2rem;
-  margin: 2rem auto;
-  max-width: 1100px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
 }
 
-.service-box h2 {
-  color: #b30000;
+.fire-extinguishers2 h2 {
   text-align: center;
   margin-bottom: 1.5rem;
-  font-size: 28px;
+  color: #b30000;
+  font-size: 30px;
 }
 
-.service-content {
+/* Content inside the box */
+.fire-extinguishers2-content {
   display: flex;
-  align-items: flex-start; /* aligns top edges */
+  align-items: flex-start; /* align text with top of the image */
+  justify-content: space-between;
   gap: 2rem;
 }
 
-.service-content img {
-  max-width: 300px;   /* keeps all images consistent */
+.fire-extinguishers2-content p {
+  flex: 2;
+  font-size: 1.2rem;
+  text-align: left;
+  margin-top: 0; /* ensure no extra top spacing */
+}
+
+
+.fire-extinguishers2-content img {
+  flex: 1;
+  max-width: 300px;
   height: auto;
   border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
 
-.service-content p {
-  flex: 1; /* text takes remaining space */
-  font-size: 1.2rem; /* ensures same text size */
-  line-height: 1.6;
-  margin: 0; /* keeps alignment tight */
+/* Responsive: stack on small screens */
+@media (max-width: 768px) {
+  .fire-extinguishers2-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .fire-extinguishers2-content p {
+    text-align: center;
+  }
+
+  .fire-extinguishers2-content img {
+    max-width: 100%;
+  }
 }
 
-/* Reverse layout for alternating sections */
-.service-content.reverse {
-  flex-direction: row-reverse;
-}
-
-.test {
-  padding: 3rem 0;
-}
-
-.test-box {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 6px;
-  padding: 2rem;
-  margin: 2rem auto;
-  max-width: 1100px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
-}
-
-.test-box h2 {
-  color: #b30000;
-  text-align: center;
-  margin-bottom: 1.5rem;
-  font-size: 28px;
-}
-
-.test-content {
-  display: flex;
-  align-items: flex-start; /* aligns top edges */
-  gap: 2rem;
-}
-
-.test-content img {
-  max-width: 300px;   /* keeps all images consistent */
-  height: 200px;
-  border-radius: 6px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.test-content p {
-  flex: 1; /* text takes remaining space */
-  font-size: 1.2rem; /* ensures same text size */
-  line-height: 1.6;
-  margin: 0; /* keeps alignment tight */
-}
-
-/* Reverse layout for alternating sections */
-.test-content.reverse {
-  flex-direction: row-reverse;
-}
 
 /* Footer */
 footer {
